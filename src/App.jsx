@@ -5,7 +5,8 @@ function App() {
 
   return (
     <div className="App">
-          <img src="/vortex.png" className="logo" alt="Vite logo" />
+      <img src="/vortex.png" className="logo" alt="Vite logo" />
+     <h1> vortex</h1>
       
     </div>
   )
