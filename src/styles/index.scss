@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $app-1: #031f35;
 $app-2: #e2eadb;
-$app-3: #7FED3E;
-$app-4: #9F9FED;
+$app-3: #7fed3e;
+$app-4: #9f9fed;
 $app-5: #106166;
 
 @font-face {
@@ -83,3 +87,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

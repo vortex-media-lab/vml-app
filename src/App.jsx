@@ -1,13 +1,14 @@
 import React from 'react'
-import './App.scss'
+import './styles/App.scss'
+import Carrousel from './components/Carrousel'
 
 function App() {
 
   return (
     <div className="App">
-      <img src="/vortex.png" className="logo" alt="Vite logo" />
-    
-      
+    <img src="/vortex.png" className="logo" alt="Vite logo" />
+     
+    <Carrousel />
     </div>
   )
 }
