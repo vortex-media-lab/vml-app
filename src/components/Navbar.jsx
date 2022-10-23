@@ -1,6 +1,7 @@
+import React from 'react'
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure} from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Nuestro trabajo', href: '#', current: false },
@@ -35,12 +36,12 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="../public/vortex.png"
+                    src="vortex.png"
                     alt="Vortex Media Lab"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="../public/vortex.png"
+                    src="vortex.png"
                     alt="Your Company"
                   />
                 </div>
