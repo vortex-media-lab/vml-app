@@ -32,7 +32,7 @@ export default function Carrousel() {
         className='mySwiper'>
         <SwiperSlide>
           <a href='https://www.youtube.com/watch?v=__k27tMyZZg'>
-            <img src='../src/assets/Bicicleta.png' alt='Vite logo' />
+            <img src='/assets/Bicicleta.png' alt='Vite logo' />
             <p className='titulo'>BY-cycle® 2022 campaign</p>
             <p>Producción, shooting y dirección creativa - Julio 2022</p>
             <div className='overlay'>
@@ -43,7 +43,7 @@ export default function Carrousel() {
 
         <SwiperSlide>
         <a href='https://www.youtube.com/watch?v=__k27tMyZZg'>
-            <img src='../src/assets/carrousel.png' alt='Vite logo' />
+            <img src='/assets/carrousel.png' alt='Vite logo' />
             <p className='titulo'>BY-cycle® 2022 campaign 2</p>
             <p>Producción, shooting y dirección creativa - Julio 2022</p>
             <div className='overlay'>
@@ -54,7 +54,7 @@ export default function Carrousel() {
 
         <SwiperSlide>
         <a href='https://www.youtube.com/watch?v=__k27tMyZZg'>
-            <img src='../src/assets/Bicicleta.png' alt='Vite logo' />
+            <img src='/assets/Bicicleta.png' alt='Vite logo' />
             <p className='titulo'>BY-cycle® 2022 campaign 3</p>
             <p>Producción, shooting y dirección creativa - Julio 2022</p>
             <div className='overlay'>
