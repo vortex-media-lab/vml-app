@@ -1,13 +1,13 @@
 import React from 'react'
 import './styles/App.scss'
 import Carrousel from './components/Carrousel'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <div className="App">
-    <img src="/vortex.png" className="logo" alt="Vite logo" />
-     
+      <Navbar/>
     <Carrousel />
     </div>
   )
