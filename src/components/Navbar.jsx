@@ -35,12 +35,12 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="/public/vortex.png"
+                    src="../public/vortex.png"
                     alt="Vortex Media Lab"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="/public/vortex.png"
+                    src="../public/vortex.png"
                     alt="Your Company"
                   />
                 </div>
