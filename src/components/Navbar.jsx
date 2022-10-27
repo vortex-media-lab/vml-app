@@ -11,7 +11,7 @@ const navigation = [
 ]
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join('nav ')
 }
 
 export default function Example() {

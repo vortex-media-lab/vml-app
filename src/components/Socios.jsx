@@ -1,0 +1,45 @@
+import React from 'react'
+
+function Socios() {
+  return (
+    <>
+      <section className='socios'>
+        <h2>Con quién hemos trabajado</h2>
+
+        <div className='socios-container'>
+          <div className='socio'>
+            <img className ="w "src='public/assets/axa-768-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio'>
+            <img src='/assets/baxter-03-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio'>
+            <img src='/assets/hilti-1-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio c'>
+            <img src='public/assets/hyatt-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio c'>
+            <img src='/assets/mont-blanc-1-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio'>
+            <img src='/assets/panduit-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio'>
+            <img src='public/assets/redbull-logo-png-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio h'>
+            <img src='/assets/walmart-logo-transparent.png' alt='Vortex Media Lab' />
+          </div>
+          <div className='socio'>
+            <img src='/assets/ZTE_logo_en.png' alt='Vortex Media Lab' />
+          </div>
+          </div>
+      </section>
+    
+    
+    </>
+  )
+}
+
+export default Socios

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './libs/mixins';
+@import './libs/variables';
+
+
 $app-1: #031f35;
 $app-2: #e2eadb;
 $app-3: #7fed3e;
@@ -9,8 +13,8 @@ $app-4: #9f9fed;
 $app-5: #106166;
 
 @font-face {
-  font-family: 'vortex-font';
-  src: url('./fonts/n27-regular-webfont.woff');
+  font-family: 'vortex-font !important';
+  src: url('../fonts/n27-regular-webfont.woff');
 }
 
 :root {
@@ -87,4 +91,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
