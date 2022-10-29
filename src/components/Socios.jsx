@@ -17,7 +17,7 @@ function Socios() {
             <img src='/assets/hilti-1-logo-png-transparent.png' alt='Vortex Media Lab' />
           </div>
           <div className='socio c'>
-            <img src='public/assets/hyatt-logo-png-transparent.png' alt='Vortex Media Lab' />
+            <img src='/assets/hyatt-logo-png-transparent.png' alt='Vortex Media Lab' />
           </div>
           <div className='socio c'>
             <img src='/assets/mont-blanc-1-logo-png-transparent.png' alt='Vortex Media Lab' />
@@ -26,7 +26,7 @@ function Socios() {
             <img src='/assets/panduit-logo-png-transparent.png' alt='Vortex Media Lab' />
           </div>
           <div className='socio'>
-            <img src='public/assets/redbull-logo-png-transparent.png' alt='Vortex Media Lab' />
+            <img src='/assets/redbull-logo-png-transparent.png' alt='Redbull' />
           </div>
           <div className='socio h'>
             <img src='/assets/walmart-logo-transparent.png' alt='Vortex Media Lab' />
