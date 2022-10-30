@@ -8,7 +8,7 @@ function Socios() {
 
         <div className='socios-container'>
           <div className='socio'>
-            <img className ="w "src='public/assets/axa-768-logo-png-transparent.png' alt='Vortex Media Lab' />
+            <img className ="w "src='/assets/axa-768-logo-png-transparent.png' alt='Vortex Media Lab' />
           </div>
           <div className='socio'>
             <img src='/assets/baxter-03-logo-png-transparent.png' alt='Vortex Media Lab' />
