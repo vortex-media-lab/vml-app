@@ -4,7 +4,7 @@ function Socios() {
   return (
     <>
       <section className='socios'>
-        <h2>Con quién hemos trabajado</h2>
+        <h2>Hemos trabajado con</h2>
 
         <div className='socios-container'>
           <div className='socio'>

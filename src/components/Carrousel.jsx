@@ -16,7 +16,7 @@ import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper';
 export default function Carrousel() {
   return (
     <>
-      <div className='container flex align-middle content-center parallax'>
+      <div className=' mx-auto flex align-middle content-center '>
         <Swiper
           spaceBetween={30}
           pagination={{
