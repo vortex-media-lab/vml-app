@@ -26,20 +26,34 @@ h5 {
 }
 
 h2,
-.h2 {
+.h2,
+strong {
   background: $app-5;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white !important;
 }
-
+strong {
+  font-weight: bolder;
+  background: $app-3;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white !important;
+}
 /* Estilos de texto pequeño */
 small,
 .text_small {
   font-size: 0.8rem;
   text-align: center !important;
 }
-
+.enfasis {
+  font-style: italic !important;
+  
+  background: $app-5;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white !important;
+}
 /* Estilos de título */
 .titulo {
   align-self: start;
@@ -67,8 +81,8 @@ small,
 .tipografy {
   font-size: 14px !important;
 }
-strong {
-  font-weight: bold;
+strong,.enfasis {
+  
   font-style: italic;
 }
 /* Estilos del documento */

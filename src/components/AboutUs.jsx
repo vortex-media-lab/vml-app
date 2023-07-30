@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <section className='AboutUs flex h-screen w-full'>
       <h1 className='text-9xl py-3 '>
-        we<span className='apos'> ́</span> are a media lab.
+        we<span className='apos'> ́</span>re a media lab.
       </h1>
       <p>
         Somos un laboratorio de ideas, <strong>experimentando</strong> en 
@@ -12,7 +12,7 @@ function AboutUs() {
         tus proyectos.
       </p>
       <p className='tipografy'>
-        <strong className='bold'>Cada necesida es ùnica,</strong> por eso trabajamos estrechamente con cada uno de nuestros socios comerciales para <strong>entender du visiòn y alcanzar objetivos</strong> de manera efectiva.
+        <strong className='enfasis'>Cada necesida es ùnica,</strong> por eso trabajamos estrechamente con cada uno de nuestros socios comerciales para <strong className='enfasis'>entender su visiòn y alcanzar objetivos</strong> de manera efectiva.
       </p>
       <div className="footer-about">
     
