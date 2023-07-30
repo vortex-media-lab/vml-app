@@ -30,7 +30,7 @@ export default function Carrousel() {
   };
 
   return (
-    <div data-aos="fade" className='mx-auto flex align-middle content-center'>
+    <div data-aos="fade" className=' mx-auto flex align-middle content-center '>
       <Swiper {...swiperSettings}>
         {carouselData.map((slide, index) => (
           <SwiperSlide key={index}>

@@ -7,27 +7,22 @@ import Socios from './components/Socios';
 import WeAre from './components/WeAre';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {  Element, Events, scrollSpy } from 'react-scroll';
+import { Element, Events, scrollSpy } from 'react-scroll';
 
 function App() {
   useEffect(() => {
-    console.log('------init');
     AOS.init({
       duration: 1000,
       once: true,
-    });
-
-    // Para espiar a los elementos y saber cuál es actualmente visible en la ventana
-    Events.scrollEvent.register('begin', function() {
-      console.log('begin', arguments);
-    });
-
-    Events.scrollEvent.register('end', function() {
-      console.log('end', arguments);
+      disable: function() {
+        const maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      },
     });
 
     scrollSpy.update();
 
+    // Removemos eventos registrados al desmontar el componente
     return () => {
       Events.scrollEvent.remove('begin');
       Events.scrollEvent.remove('end');
@@ -35,22 +30,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App scroll-container">
       <Navbar />
 
-      <Element name="carrousel">
+      <Element name="carrousel" className="snap-section">
         <Carrousel data-aos="fade-up" />
       </Element>
 
-      <Element name="aboutUs">
+      <Element name="aboutUs" className="snap-section">
         <AboutUs data-aos="fade-up" data-aos-delay="200" />
       </Element>
 
-      <Element name="weAre">
+      <Element name="weAre" className="snap-section">
         <WeAre data-aos="fade-up" data-aos-delay="400" />
       </Element>
 
-      <Element name="socios">
+      <Element name="socios" className="snap-section">
         <Socios data-aos="fade-up" data-aos-delay="600" />
       </Element>
     </div>
