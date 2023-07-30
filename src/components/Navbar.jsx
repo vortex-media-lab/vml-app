@@ -1,17 +1,17 @@
-import React from 'react'
-import { Fragment } from 'react'
-import { Disclosure} from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { Disclosure } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-scroll';
 
 const navigation = [
-  { name: 'Nuestro trabajo', href: '#', current: false },
-  { name: 'Nuestros servicios', href: '#', current: false },
-  { name: 'Compañia', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
-]
+  { name: 'Nuestro trabajo', href: 'carrousel', current: false },
+  { name: 'Nosotros', href: 'aboutUs', current: false },
+  { name: 'Compañia', href: 'weAre', current: false },
+  { name: 'Contacto', href: 'socios', current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join('nav ')
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
@@ -22,7 +22,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+                {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -48,9 +48,13 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-[#9f9fed] hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -58,22 +62,24 @@ export default function Example() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
               </div>
-            
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={item.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -81,12 +87,12 @@ export default function Example() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-  )
+  );
 }

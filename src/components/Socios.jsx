@@ -3,7 +3,7 @@ import React from 'react'
 function Socios() {
   return (
     <>
-      <section className='socios'>
+      <section  data-aos="fade-up" className='socios'>
         <h2>Hemos trabajado con</h2>
 
         <div className='socios-container'>

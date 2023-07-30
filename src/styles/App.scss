@@ -48,8 +48,16 @@ small,
 }
 .enfasis {
   font-style: italic !important;
-  
+
   background: $app-5;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white !important;
+}
+
+.enfasis2 {
+  font-style: italic !important;
+  background: $app-3;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white !important;
@@ -60,7 +68,7 @@ small,
   text-align: left !important;
 
   color: white;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   background: white;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,10 +87,11 @@ small,
 }
 
 .tipografy {
-  font-size: 14px !important;
+  margin-top: 1rem;
+  font-size: 16px !important;
 }
-strong,.enfasis {
-  
+strong,
+.enfasis {
   font-style: italic;
 }
 /* Estilos del documento */
@@ -320,9 +329,8 @@ nav {
 .AboutUs {
   flex-flow: column;
   background-color: $app-2;
-
   box-sizing: border-box;
-  padding: 10vh;
+  padding: 8vh;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -489,4 +497,8 @@ nav {
 
 .c {
   opacity: 0.6;
+}
+
+.WeAre {
+  height: 100vh;
 }
