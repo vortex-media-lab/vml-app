@@ -5,8 +5,8 @@ import backgroundImage from '/src/fondo.png';
 
 const isMobile = window.innerWidth <= 768; // Asumiendo 768px como el breakpoint para móviles
 const randomSize = isMobile
-  ? Math.random() * (2.0625 - 1.375) + 1.375 // móvil
-  : Math.random() * 1 + 1.3; // desktop
+  ? Math.random() * (1.2625 - 1.375) + 1.375 // móvil
+  : Math.random() * 1 + 2.3; // desktop
 
 const services = [
   'digital',
@@ -62,23 +62,23 @@ function Services() {
             return (
               <div
                 key={index}
-                className={`py-4 rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 mx-2 my-2 responsive-text`}
+                className={`py-0 sm:py-4 rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 mx-2 my-2 responsive-text`}
                 data-aos='zoom-in'
                 style={{
                   fontSize: `${randomSize}rem`,
                   color: randomColor,
-                  margin: 6,
+                  
                 }}>
                 {service.split(' ').map((word, wordIndex) => {
                   const isItalic = Math.random() > 0.5 ? 'italic' : '';
                   return (
-                    <span
+                    <b
                       key={wordIndex}
                       className={`${
                         wordIndex % 2 === 0 ? 'app-2' : 'app-3'
                       } ${isItalic}`}>
                       {word}{' '}
-                    </span>
+                    </b>
                   );
                 })}
               </div>
