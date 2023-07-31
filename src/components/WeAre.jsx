@@ -11,7 +11,7 @@ function WeAre() {
   }, []);
 
   return (
-    <section data-aos="fade-up" className='WeAre flex flex-col  h-screen w-full pt-18 items-center justify-center px-4 md:px-0'>
+    <section data-aos="fade-up" className='WeAre flex flex-col  w-full pt-18 items-center justify-center px-4 md:px-0'>
       <p className='text-2xl md:text-5xl text-white'>
         No sólo somos creadores,
       </p>

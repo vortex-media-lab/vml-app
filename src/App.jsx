@@ -8,6 +8,7 @@ import WeAre from './components/WeAre';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Element, Events, scrollSpy } from 'react-scroll';
+import Services from './components/Services';
 
 function App() {
   useEffect(() => {
@@ -44,10 +45,14 @@ function App() {
       <Element name="weAre" className="snap-section">
         <WeAre data-aos="fade-up" data-aos-delay="400" />
       </Element>
-
+      <Element name="services" className="snap-section">
+        <Services data-aos="fade-up" data-aos-delay="600" />
+      </Element>
       <Element name="socios" className="snap-section">
         <Socios data-aos="fade-up" data-aos-delay="600" />
       </Element>
+  
+      
     </div>
   );
 }

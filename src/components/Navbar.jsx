@@ -48,6 +48,9 @@ export default function Example() {
         return 'bg-[#031f35cb]';
     }
   };
+// Agrega la ruta correcta a "logo-dark.png" en las siguientes dos líneas:
+const logoDarkSrc = 'logo-dark.png';
+const logoAltText = 'Your Company';
 
   return (
     <Disclosure as='nav' className={`${getNavbarColor()} `}>
@@ -73,17 +76,34 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className='flex flex-1 items-center justify-between sm:items-stretch sm:justify-between align-middle'>
-                <div className='flex flex-shrink-0 items-center'>
-                  <img
-                    className='block h-8 w-auto lg:hidden'
-                    src='vortex.png'
-                    alt='Vortex Media Lab'
-                  />
-                  <img
-                    className='hidden h-8 w-auto lg:block'
-                    src='vortex.png'
-                    alt='Your Company'
-                  />
+              <div className='flex flex-shrink-0 items-center'>
+                  {/* Cambia la imagen a "logo-dark.png" solo en los casos 'aboutUs' y 'socios' */}
+                  {['aboutUs', 'socios'].includes(activeSection) ? (
+                    <img
+                      className='block h-8 w-auto lg:hidden'
+                      src={logoDarkSrc}
+                      alt={logoAltText}
+                    />
+                  ) : (
+                    <img
+                      className='block h-8 w-auto lg:hidden'
+                      src='vortex.png'
+                      alt='Vortex Media Lab'
+                    />
+                  )}
+                  {['aboutUs', 'socios'].includes(activeSection) ? (
+                    <img
+                      className='hidden h-8 w-auto lg:block'
+                      src={logoDarkSrc}
+                      alt={logoAltText}
+                    />
+                  ) : (
+                    <img
+                      className='hidden h-8 w-auto lg:block'
+                      src='vortex.png'
+                      alt='Your Company'
+                    />
+                  )}
                 </div>
              <div className="flex">   <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4'>
@@ -99,7 +119,9 @@ export default function Example() {
                           item.current
                             ? 'bg-gray-900 text-white'
                             : 'text-gray-300 hover:bg-[#9f9fed] hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'px-3 py-2 rounded-md text-sm font-medium',
+                          // Agrega la clase 'text-black' para el texto del menú cuando el fondo es oscuro
+                          activeSection === 'aboutUs' || activeSection === 'socios' ? 'text-black' : ''
                         )}
                         aria-current={item.current ? 'page' : undefined}
                         onClick={close}>

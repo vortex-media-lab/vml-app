@@ -45,6 +45,7 @@ export default function Carrousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <br />
     </div>
   );
 }

@@ -12,14 +12,18 @@
   "dependencies": {
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.12",
+    "@react-three/drei": "^9.80.0",
+    "@react-three/fiber": "^8.13.6",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
+    "react-three-fiber": "^6.0.13",
     "react-transition-group": "^4.4.5",
     "sass": "^1.55.0",
-    "swiper": "^8.4.4"
+    "swiper": "^8.4.7",
+    "three": "^0.155.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
