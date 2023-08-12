@@ -508,7 +508,7 @@ nav {
 @media (min-width: 640px) {
   /* Este es el valor estándar del breakpoint sm: en Tailwind */
   .WeAre {
-    min-height: 120vh;
+    min-height: 100vh;
   }
 }
 
@@ -517,6 +517,7 @@ a.flex.items-center > i {
 }
 
 .services {
+  display: flex;
   min-height: 100vh !important;
   height: auto;
   padding: 8rem 4rem !important;

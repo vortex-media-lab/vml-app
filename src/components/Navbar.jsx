@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 const navigation = [
   { name: 'Nuestro trabajo', href: 'carrousel', current: false },
   { name: 'Nosotros', href: 'aboutUs', current: false },
-  { name: 'Compañia', href: 'weAre', current: false },
+  { name: 'Servicios', href: 'services', current: false },
   { name: 'Contacto', href: 'socios', current: false },
 ];
 
