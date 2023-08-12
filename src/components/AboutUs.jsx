@@ -14,7 +14,7 @@ function AboutUs() {
       </p>
      
       <p className='tipografy'>
-        <strong className='enfasis'>Cada necesida es ùnica,</strong> por eso trabajamos estrechamente con cada uno de nuestros socios comerciales para <strong className='enfasis'>entender su visiòn y alcanzar objetivos</strong> de manera efectiva.
+        <strong className='enfasis'>Cada necesida es única,</strong> por eso trabajamos estrechamente con cada uno de nuestros socios comerciales para <strong className='enfasis'>entender su visión y alcanzar objetivos</strong> de manera efectiva.
       </p>
       <div className="footer-about">
     
