@@ -1,20 +1,8 @@
 [
   {
-    "image": "/assets/Bicicleta.png",
-    "title": "BY-cycle® 2022 campaign",
-    "description": "Producción, shooting y dirección creativa - Julio 2022",
-    "videoUrl": "https://www.youtube.com/embed/pSU13TI6XGs"
-  },
-  {
-    "image": "/assets/carrousel.png",
-    "title": "BY-cycle® 2022 campaign 2",
-    "description": "Producción, shooting y dirección creativa - Julio 2022",
-    "videoUrl": "https://www.youtube.com/watch?v=__k27tMyZZg"
-  },
-  {
-    "image": "/assets/Bicicleta.png",
-    "title": "BY-cycle® 2022 campaign 3",
-    "description": "Producción, shooting y dirección creativa - Julio 2022",
-    "videoUrl": "https://www.youtube.com/watch?v=__k27tMyZZg"
+    "image": "/assets/fondo.png",
+    "title": "Demo Reel 2023",
+    "description": "Producción, shooting y dirección creativa- Vortex Media Lab",
+    "videoUrl": "https://player.vimeo.com/video/850386858"
   }
 ]
