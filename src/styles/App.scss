@@ -525,3 +525,13 @@ a.flex.items-center > i {
     font-size: clamp(8px, 5vw, 42px) !important;
   }
 }
+
+.contenedor-iframe {
+  transition: opacity 0.3s ease;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  .vp-center {
+    background-color: #031f35 !important;
+  }
+}

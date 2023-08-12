@@ -1,52 +1,34 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper';
-
 import '../styles/App.scss';
 import carouselData from '../utils/carouselData.json';
 
 export default function Carrousel() {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedVideoUrl, setSelectedVideoUrl] = useState('');
-  const videoRef = useRef(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.hash.slice(2));
     const videoParam = params.get('video');
-
     if (videoParam) {
       setSelectedVideoUrl(videoParam);
       setModalVisible(true);
     }
   }, []);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.addEventListener('ended', closeModal);
-    }
-
-    return () => {
-      if (videoRef.current) {
-        videoRef.current.removeEventListener('ended', closeModal);
-      }
-    };
-  }, []);
-
-  const toggleModal = (videoUrl) => {
+  const toggleModal = useCallback((videoUrl) => {
     setModalVisible(!modalVisible);
     setSelectedVideoUrl(videoUrl);
-  };
+  }, [modalVisible]);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setModalVisible(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
-  };
+  }, []);
 
   const swiperSettings = {
     spaceBetween: 30,
@@ -61,27 +43,16 @@ export default function Carrousel() {
   };
 
   return (
-    <div data-aos="fade" className="mx-auto flex align-middle content-center relative">
-      {modalVisible && (
-        <iframe
-          ref={videoRef}
-          src={`${selectedVideoUrl}?h=f76d0adfab&autoplay=1&loop=1&title=0&byline=0&portrait=0`}
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          className="fixed top-0 left-0 w-screen h-screen z-0"
-          title="Embedded Video"
-        ></iframe>
-      )}
+    <section data-aos='fade' className='mx-auto flex align-middle content-center relative'>
       <Swiper {...swiperSettings}>
-        {carouselData.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <a onClick={() => toggleModal(slide.videoUrl)}>
-              <img src={slide.image} alt="Vortex Media Lab" />
-              <p className="titulo">{slide.title}</p>
-              <p>{slide.description}</p>
-              <div className="overlay">
-                <div className="text">Ver el reel</div>
+        {carouselData.map(({ id, videoUrl, image, title, description }) => (
+          <SwiperSlide key={id}>
+            <a onClick={() => toggleModal(videoUrl)}>
+              <img src={image} alt='Vortex Media Lab' />
+              <p className='titulo'>{title}</p>
+              <p>{description}</p>
+              <div className='overlay'>
+                <div className='text'>Ver el reel</div>
               </div>
             </a>
           </SwiperSlide>
@@ -89,31 +60,23 @@ export default function Carrousel() {
       </Swiper>
       <br />
       {modalVisible && (
-        <div className="fixed top-0 left-0 w-screen h-screen bg-[#031f35] flex justify-center items-center" style={{ zIndex: 300000000 }} onClick={closeModal}>
-          <div className="relative w-screen " onClick={(e) => e.stopPropagation()}>
-            <button
-              className="fixed right-4 bottom-8 text-[#031f35] bg-[#7fed3e]"
-              style={{ zIndex: 300000001 }}
-              onClick={() => closeModal()}
-            >
-              Close
+        <div style={{ zIndex: 300000000 }} onClick={closeModal}>
+          <div className='relative w-screen box-content' onClick={(e) => e.stopPropagation()}>
+            <button className='fixed right-4 bottom-16 text-[#031f35] bg-[#7fed3e]' style={{ zIndex: 300000001 }} onClick={closeModal}>
+              Cerrar
             </button>
-            {/* */}
-            <div className="fixed top-0 left-0 w-screen h-screen ">
-              <iframe
-                ref={videoRef}
-                src={`${selectedVideoUrl}?h=f76d0adfab&autoplay=1&loop=1&title=0&byline=0&portrait=0`}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                className="fixed top-0 left-0 w-screen h-screen   "
-                title="Embedded Video"
-                style={{ backgroundColor: '#031f35' }}
-              ></iframe>
-            </div>
+            <iframe
+              src={`${selectedVideoUrl}?h=f76d0adfab&autoplay=1&loop=1&title=0&byline=0&portrait=0`}
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowFullScreen
+              className='fixed top-0 left-0 w-screen h-screen py-20 '
+              title='Embedded Video'
+              style={{ backgroundColor: "#Fff" }}
+              onEnded={closeModal}
+            />
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
