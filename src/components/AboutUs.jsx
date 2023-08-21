@@ -3,18 +3,18 @@ import React from 'react';
 function AboutUs() {
   return (
     <section  data-aos="fade-up" className='  justify-center flex align-middle'>
-      <div className="AboutUs  flex h-screen w-full">
+      <div className="AboutUs  flex h-screen w-full content-center justify-items-center">
       <h1 className='text-9xl py-3 '>
         we<span className='apos'> ́</span>re a<br/> media lab.
       </h1>
-      <p>
+      <p className='text-3xl'>
         Somos un laboratorio de ideas, <strong>experimentando</strong> en 
-        la creaciòn de <strong>contenido hecho a la medida</strong> de 
+        la<br/> creaciòn de <strong>contenido hecho a la medida</strong> de 
         tus proyectos.
       </p>
      
-      <p className='tipografy'>
-        <strong className='enfasis'>Cada necesida es única,</strong> por eso trabajamos estrechamente con cada uno de nuestros socios comerciales para <strong className='enfasis'>entender su visión y alcanzar objetivos</strong> de manera efectiva.
+      <p className='text-xl py-4'>
+        <strong >Cada necesida es única,</strong> por eso trabajamos estrechamente con cada uno de nuestros Partners comerciales para <strong >entender su visión y alcanzar objetivos</strong> de manera efectiva.
       </p>
       <div className="footer-about">
     

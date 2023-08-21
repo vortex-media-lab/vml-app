@@ -3,7 +3,7 @@ import './styles/App.scss';
 import Carrousel from './components/Carrousel';
 import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
-import Socios from './components/Socios';
+import Partners from './components/Partners';
 import WeAre from './components/WeAre';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -49,8 +49,8 @@ function App() {
       <Element name="services" className="snap-section">
         <Services data-aos="fade-up" data-aos-delay="600" />
       </Element>
-      <Element name="socios" className="snap-section">
-        <Socios data-aos="fade-up" data-aos-delay="600" />
+      <Element name="Partners" className="snap-section">
+        <Partners data-aos="fade-up" data-aos-delay="600" />
       </Element>
       <Element name="weWould" className="snap-section">
         <WeWould data-aos="fade-up" data-aos-delay="600" />

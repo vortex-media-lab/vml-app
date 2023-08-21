@@ -22,9 +22,9 @@ export default function Carrousel() {
   }, []);
 
   const toggleModal = useCallback((videoUrl) => {
-    setModalVisible(!modalVisible);
+    setModalVisible((prevModalVisible) => !prevModalVisible);
     setSelectedVideoUrl(videoUrl);
-  }, [modalVisible]);
+  }, []);
 
   const closeModal = useCallback(() => {
     setModalVisible(false);
@@ -52,7 +52,7 @@ export default function Carrousel() {
               <p className='titulo'>{title}</p>
               <p>{description}</p>
               <div className='overlay'>
-                <div className='text'>Ver el reel</div>
+                <button className='text'>Ver el reel</button>
               </div>
             </a>
           </SwiperSlide>
@@ -69,9 +69,7 @@ export default function Carrousel() {
               src={`${selectedVideoUrl}?h=f76d0adfab&autoplay=1&loop=1&title=0&byline=0&portrait=0`}
               allow='autoplay; fullscreen; picture-in-picture'
               allowFullScreen
-              className='fixed top-0 left-0 w-screen h-screen py-20 '
-              title='Embedded Video'
-              style={{ backgroundColor: "#Fff" }}
+              className='fixed top-0 left-0 w-screen h-screen py-20 iframe-black-bg '
               onEnded={closeModal}
             />
           </div>

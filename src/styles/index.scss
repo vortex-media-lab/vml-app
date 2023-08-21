@@ -93,7 +93,10 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  cursor: pointer; /* Cambia el cursor a una mano */
+  background-color: #646cff; /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+  border-color: #646cff; /* Cambia el color del borde */
 }
 button:focus,
 button:focus-visible {
@@ -119,12 +122,120 @@ section {
 }
 
 .VortexCarrousel {
-  margin-bottom: 2rem;
+  width: 100vw !important;
+  box-sizing: border-box !important;
+  margin: 0 auto;
+
+  iframe body {
+    background-color: #031f35 !important;
+  }
 }
-.weWould *{
-  color:#031f35 !important;
+.weWould {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #031f35 !important;
+  box-sizing: border-box;
 }
 
-.weWould h4{
-  color:#031f35 !important;
+.weWould h4 {
+  color: #031f35 !important;
+}
+
+.socioimg {
+  max-height: 100px !important;
+  box-sizing: border-box;
+  height: fit-content;
+  height: auto;
+}
+
+.vp-center {
+  background-color: #031f358c !important;
+}
+// En tu archivo App.scss
+.iframe-black-bg {
+  background-color: #000000;
+}
+iframe.vp-center {
+  background-color: #7fed3e; // Cambia este color según el tono de verde que desees
+}
+
+.partners {
+  background: white;
+  height: auto;
+  max-height: 70vh;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2%;
+  .swiper {
+    max-width: 1300px;
+    width: 100%;
+    min-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent !important;
+    height: calc((77% - 60px) / 2) !important;
+    padding: 5px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+
+    img {
+      position: absolute !important;
+      z-index: -1 !important;
+      width: 100% !important;
+      height: 100vh !important;
+      top: auto !important;
+      left: auto !important;
+      object-fit: contain !important;
+      max-width: 180px !important;
+      max-height: 80px !important;
+      margin: auto;
+      mix-blend-mode: difference !important;
+      opacity: 0.9;
+      @include tablet {
+        max-width: 100px !important;
+        max-height: 50px !important;
+      }
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $app-5 !important;
+  position: absolute;
+  top: 30%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #1062669d;
+
+  border-radius: 8px;
 }

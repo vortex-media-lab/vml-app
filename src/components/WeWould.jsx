@@ -2,7 +2,7 @@ import React from 'react'
 
 function WeWould() {
   return (
-    <section className='weWould  p-8 bg-[#9f9fed]'>
+    <section className='weWould  p-8 bg-[#9f9fed] mx-auto'>
       <div className="container pt-8">
       <span className='text-5xl'>Nos encantaría colaborar contigo.
       </span>
