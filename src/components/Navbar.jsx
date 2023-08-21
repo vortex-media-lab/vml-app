@@ -58,7 +58,7 @@ export default function Example() {
           <div className='relative flex h-16 items-center justify-between w-full'>
             {window.matchMedia('(orientation: landscape)').matches && (
               <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-[#106166] hover:bg-white-700 hover:text-[#106166] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon
@@ -117,8 +117,8 @@ export default function Example() {
                       duration={500}
                       className={classNames(
                         item.current
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-[#9f9fed] hover:text-white',
+                          ? 'bg-gray-900 text-[#106166]'
+                          : 'text-gray-300 hover:bg-[#9f9fed] hover:text-[#106166]',
                         'px-3 py-2 rounded-md text-sm font-medium',
                         activeSection === 'aboutUs' || activeSection === 'Partners' ? 'text-black' : ''
                       )}
@@ -137,21 +137,21 @@ export default function Example() {
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
-                    <i className='fa fa-facebook fa-lg text-white'></i>
+                    <i className='fa fa-facebook fa-lg text-[#106166]'></i>
                   </a>
                   <a
                     href='https://twitter.com/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
-                    <i className='fa fa-twitter fa-lg text-white'></i>
+                    <i className='fa fa-twitter fa-lg text-[#106166]'></i>
                   </a>
                   <a
-                    href='https://www.instagram.com/'
+                    href='https://www.instagram.com/vortexmedialab/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
-                    <i className='fa fa-instagram fa-lg text-white'></i>
+                    <i className='fa fa-instagram fa-lg text-[#106166]'></i>
                   </a>
                 </div>
               </div>
@@ -169,8 +169,8 @@ export default function Example() {
                   duration={500}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      ? 'bg-gray-900 text-[#106166]'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-[#106166]',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

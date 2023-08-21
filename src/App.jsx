@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import { Element, Events, scrollSpy } from 'react-scroll';
 import Services from './components/Services';
 import WeWould from './components/WeWould';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -54,6 +55,9 @@ function App() {
       </Element>
       <Element name="weWould" className="snap-section">
         <WeWould data-aos="fade-up" data-aos-delay="600" />
+      </Element>
+      <Element name="weWould" className="snap-section">
+        <Footer data-aos="fade-up" data-aos-delay="600" />
       </Element>
   
       

@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import backgroundImage from '/src/fondo.png';
 
-const isMobile = window.innerWidth <= 768; // Asumiendo 768px como el breakpoint para móviles
-const randomSize = isMobile
-  ? Math.random() * (1.2625 - 1.375) + 1.375 // móvil
-  : Math.random() * 1 + 2.3; // desktop
+const isMobile = window.innerWidth <= 768;
+const getRandomSize = () => {
+  return isMobile
+    ? Math.random() * (1.2625 - 1.375) + 1.375
+    : Math.random() * 1 + 2.3;
+};
 
 const services = [
   'digital',
@@ -37,11 +39,15 @@ const services = [
   'videoclip',
   'voiceover',
 ];
-const colors = ['#e2eadb', '#7fed3e']; // Add any colors you want
+const colors = ['#e2eadb', '#7fed3e'];
+
+function getRandomColor() {
+  return colors[Math.floor(Math.random() * colors.length)];
+}
 
 function Services() {
   useEffect(() => {
-    AOS.init(); // Initialize AOS for animations
+    AOS.init();
   }, []);
 
   return (
@@ -57,8 +63,8 @@ function Services() {
 
         <div className='flex flex-wrap justify-center items-center space-y-4 md:space-y-0'>
           {services.map((service, index) => {
-            const randomColor =
-              colors[Math.floor(Math.random() * colors.length)];
+            const randomColor = getRandomColor();
+            const randomSize = getRandomSize();
             return (
               <div
                 key={index}
@@ -67,7 +73,6 @@ function Services() {
                 style={{
                   fontSize: `${randomSize}rem`,
                   color: randomColor,
-                  
                 }}>
                 {service.split(' ').map((word, wordIndex) => {
                   const isItalic = Math.random() > 0.5 ? 'italic' : '';
