@@ -48,7 +48,7 @@ export default function Example() {
     }
   };
 
-  const logoDarkSrc = 'src/vortex.png';
+  const logoDarkSrc = 'logo-dark.png';
   const logoAltText = 'Vortex Media Lab';
 
   return (
@@ -99,7 +99,7 @@ export default function Example() {
                 ) : (
                   <img
                     className='hidden h-8 w-auto lg:block'
-                    src='src/vortex.png'
+                    src='vortex.png'
                     alt='Vortex Media lab'
                   />
                 )}
@@ -147,7 +147,7 @@ export default function Example() {
                     <i className='fa fa-linkedin fa-lg text-[#106166]'></i>
                   </a>
                   <a
-                    href='https://www.instagram.com/vortexmedialab/vortexmedialab/'
+                    href='https://www.instagram.com/vortexmedialab/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>

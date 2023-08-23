@@ -1,5 +1,5 @@
 import React from 'react';
-import logoDarkSrc from '../../src/vortex.png';
+import logoDarkSrc from '/vortex.png';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,7 @@ function Footer() {
                 <i className='fa fa-linkedin fa-lg text-[#106166]'></i>
               </a>
               <a
-                href='https://www.instagram.com/vortexmedialab/vortexmedialab/'
+                href='https://www.instagram.com/vortexmedialab/'
                 target='_blank'
                 rel='noreferrer'
                 className='flex items-center justify-center bg-green-primary rounded-full w-16 h-16 bg-[#7fed3e] hover:bg-green-600'>
