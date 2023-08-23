@@ -6,7 +6,7 @@ function WeWould() {
       <div className="container pt-8">
       <span className='text-5xl'>Nos encantaría colaborar contigo.
       </span>
-        <p className='max-w-4xl p-8'>Completa el formulario a continuación si deseas solicitar un presupuesto para un proyecto, consultar para una colaboración o simplemente saludar.</p>
+        <p className='max-w-4xl p-8'>Escríbenos si deseas solicitar presupuesto para un proyecto, consultar para una colaboración o simplemente saludar. </p>
         
         <b className='text-2xl '>contacto</b>
         <a className='text-3xl' href="mailto:info@vortexmedialab.mx">info@vortexmedialab.mx</a>

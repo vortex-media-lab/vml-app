@@ -1,5 +1,5 @@
 import React from 'react';
-import logoDarkSrc from '../../public/vortex.png';
+import logoDarkSrc from '../../src/vortex.png';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,21 +17,21 @@ function Footer() {
           <div className='  my-5'>
             <div className='flex space-x-8 items-left justify-start h-full footerLinks'>
               <a
-                href='https://www.facebook.com/'
+                href='https://www.facebook.com/vortexmedialabmx/'
                 target='_blank'
                 rel='noreferrer'
                 className='flex items-center justify-center bg-green-primary rounded-full w-16 h-16 bg-[#7fed3e] hover:bg-green-600'>
                 <i className='fa fa-facebook fa-lg text-[#106166]'></i>
               </a>
               <a
-                href='https://twitter.com/'
+                href='https://www.linkedin.com/company/vortex-media-lab/'
                 target='_blank'
                 rel='noreferrer'
                 className='flex items-center justify-center bg-green-primary rounded-full w-16 h-16 bg-[#7fed3e] hover:bg-green-600'>
-                <i className='fa fa-twitter fa-lg text-[#106166]'></i>
+                <i className='fa fa-linkedin fa-lg text-[#106166]'></i>
               </a>
               <a
-                href='https://www.instagram.com/vortexmedialab/'
+                href='https://www.instagram.com/vortexmedialab/vortexmedialab/'
                 target='_blank'
                 rel='noreferrer'
                 className='flex items-center justify-center bg-green-primary rounded-full w-16 h-16 bg-[#7fed3e] hover:bg-green-600'>

@@ -48,8 +48,8 @@ export default function Example() {
     }
   };
 
-  const logoDarkSrc = 'logo-dark.png';
-  const logoAltText = 'Your Company';
+  const logoDarkSrc = 'src/vortex.png';
+  const logoAltText = 'Vortex Media Lab';
 
   return (
     <Disclosure as='nav' className={`${getNavbarColor()} `}>
@@ -99,8 +99,8 @@ export default function Example() {
                 ) : (
                   <img
                     className='hidden h-8 w-auto lg:block'
-                    src='vortex.png'
-                    alt='Your Company'
+                    src='src/vortex.png'
+                    alt='Vortex Media lab'
                   />
                 )}
               </div>
@@ -133,21 +133,21 @@ export default function Example() {
               <div className='hidden sm:ml-6 sm:block'>
                 <div className='flex space-x-4 items-center justify-center h-full'>
                   <a
-                    href='https://www.facebook.com/'
+                    href='https://www.facebook.com/vortexmedialabmx/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
                     <i className='fa fa-facebook fa-lg text-[#106166]'></i>
                   </a>
                   <a
-                    href='https://twitter.com/'
+                    href='https://www.linkedin.com/company/vortex-media-lab/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
-                    <i className='fa fa-twitter fa-lg text-[#106166]'></i>
+                    <i className='fa fa-linkedin fa-lg text-[#106166]'></i>
                   </a>
                   <a
-                    href='https://www.instagram.com/vortexmedialab/'
+                    href='https://www.instagram.com/vortexmedialab/vortexmedialab/'
                     target='_blank'
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
