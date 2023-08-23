@@ -3,6 +3,8 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, scroller } from 'react-scroll';
 import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 const navigation = [
   { name: 'Nuestro trabajo', href: 'carrousel', current: false },
@@ -120,7 +122,10 @@ export default function Example() {
                           ? 'bg-gray-900 text-[#106166]'
                           : 'text-gray-300 hover:bg-[#9f9fed] hover:text-[#106166]',
                         'px-3 py-2 rounded-md text-sm font-medium',
-                        activeSection === 'aboutUs' || activeSection === 'Partners' ? 'text-black' : ''
+                        activeSection === 'aboutUs' ||
+                          activeSection === 'Partners'
+                          ? 'text-black'
+                          : ''
                       )}
                       aria-current={item.current ? 'page' : undefined}
                       onClick={close}>
@@ -152,6 +157,17 @@ export default function Example() {
                     rel='noreferrer'
                     className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
                     <i className='fa fa-instagram fa-lg text-[#106166]'></i>
+                  </a>
+
+                  <a
+                    href='https://www.tiktok.com/@vortexmedialab?is_from_webapp=1&sender_device=pc'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='flex items-center justify-center bg-green-primary rounded-full w-6 h-6 bg-[#7fed3e] hover:bg-green-600'>
+                    <FontAwesomeIcon
+                      icon={faTiktok}
+                      className='text-[#106166]'
+                    />
                   </a>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/App.scss';
+
 import Carrousel from './components/Carrousel';
 import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
@@ -39,6 +40,7 @@ function App() {
       <Element name="carrousel" className="snap-section">
         <Carrousel data-aos="fade-up" />
       </Element>
+
 
       <Element name="aboutUs" className="snap-section">
         <AboutUs data-aos="fade-up" data-aos-delay="200" />
