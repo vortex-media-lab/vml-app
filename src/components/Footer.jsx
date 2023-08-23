@@ -16,7 +16,7 @@ function Footer() {
           />
           <p className='text-4xl text-left text-white'>
             Somos un laboratorio de ideas,{' '}
-            <strong className='enfasis'>experimentando</strong> en la
+            <strong className='enfasis'>experimentado</strong> en la
             <br /> creación de{' '}
             <strong className='enfasis'>contenido hecho a la medida</strong> de
             tus proyectos.
