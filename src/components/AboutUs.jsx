@@ -13,7 +13,7 @@ function AboutUs() {
         tus proyectos.
       </p>
      
-      <p className='text-xl py-4'>
+      <p className='text-2xl py-4'>
         <strong >Cada necesidad es única,</strong> por eso trabajamos estrechamente con cada uno de nuestros partners comerciales para <strong >entender su visión y alcanzar objetivos</strong> de manera efectiva.
       </p>
       <div className="footer-about">
